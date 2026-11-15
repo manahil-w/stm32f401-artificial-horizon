@@ -1,21 +1,18 @@
 #include "stm32f4xx.h"
-
+#include "clock.h"
+#include "systick.h"
 int main(void)
 {
-    /* 1. Enable the GPIOC peripheral clock (bit 2 of AHB1ENR) */
-    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;
+    uint32_t hz = (clock_init_84mhz() == 0) ? 84000000U : 16000000U;
+    systick_init(hz);
 
-    /* 2. Set PC13 to output mode (01) */
+    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;
     GPIOC->MODER &= ~(3UL << (13 * 2));
     GPIOC->MODER |=  (1UL << (13 * 2));
 
-    /* 3. Set PC13 output type to push-pull (0) */
     while (1)
-{
-    for (int n = 0; n < 4; n++) {              /* 4 toggles = 2 full blinks */
+    {
         GPIOC->ODR ^= (1UL << 13);
-        for (volatile uint32_t i = 0; i < 100000; i++) { }
+        delay_ms(500);
     }
-    for (volatile uint32_t i = 0; i < 2000000; i++) { }   /* long pause */
-}
 }

@@ -18,6 +18,57 @@ Discarded input sections
  .text          0x00000000        0x0 build/startup/startup.o
  .data          0x00000000        0x0 build/startup/startup.o
  .bss           0x00000000        0x0 build/startup/startup.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/clock.o
+ .text          0x00000000        0x0 build/drivers/clock.o
+ .data          0x00000000        0x0 build/drivers/clock.o
+ .bss           0x00000000        0x0 build/drivers/clock.o
+ .debug_macro   0x00000000      0xaf0 build/drivers/clock.o
+ .debug_macro   0x00000000      0x523 build/drivers/clock.o
+ .debug_macro   0x00000000       0x2e build/drivers/clock.o
+ .debug_macro   0x00000000       0x28 build/drivers/clock.o
+ .debug_macro   0x00000000       0x1c build/drivers/clock.o
+ .debug_macro   0x00000000       0x22 build/drivers/clock.o
+ .debug_macro   0x00000000      0x107 build/drivers/clock.o
+ .debug_macro   0x00000000     0x1057 build/drivers/clock.o
+ .debug_macro   0x00000000      0x11f build/drivers/clock.o
+ .debug_macro   0x00000000     0xb881 build/drivers/clock.o
+ .debug_macro   0x00000000       0x6d build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .group         0x00000000        0xc build/drivers/systick.o
+ .text          0x00000000        0x0 build/drivers/systick.o
+ .data          0x00000000        0x0 build/drivers/systick.o
+ .bss           0x00000000        0x0 build/drivers/systick.o
+ .debug_macro   0x00000000      0xaf0 build/drivers/systick.o
+ .debug_macro   0x00000000      0x523 build/drivers/systick.o
+ .debug_macro   0x00000000       0x2e build/drivers/systick.o
+ .debug_macro   0x00000000       0x28 build/drivers/systick.o
+ .debug_macro   0x00000000       0x1c build/drivers/systick.o
+ .debug_macro   0x00000000       0x22 build/drivers/systick.o
+ .debug_macro   0x00000000      0x107 build/drivers/systick.o
+ .debug_macro   0x00000000     0x1057 build/drivers/systick.o
+ .debug_macro   0x00000000      0x11f build/drivers/systick.o
+ .debug_macro   0x00000000     0xb881 build/drivers/systick.o
+ .debug_macro   0x00000000       0x6d build/drivers/systick.o
+ .group         0x00000000        0xc build/app/main.o
  .group         0x00000000        0xc build/app/main.o
  .group         0x00000000        0xc build/app/main.o
  .group         0x00000000        0xc build/app/main.o
@@ -54,6 +105,8 @@ RAM              0x20000000         0x00018000         xrw
 Linker script and memory map
 
 LOAD build/startup/startup.o
+LOAD build/drivers/clock.o
+LOAD build/drivers/systick.o
 LOAD build/app/main.o
 START GROUP
 LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a
@@ -80,14 +133,13 @@ END GROUP
                 0x08000000                vector_table
                 0x08000040                        . = ALIGN (0x4)
 
-.text           0x08000040       0xcc
+.text           0x08000040      0x1c4
                 0x08000040                        . = ALIGN (0x4)
  *(.text*)
  .text.Default_Handler
                 0x08000040        0x2 build/startup/startup.o
                 0x08000040                DebugMon_Handler
                 0x08000040                HardFault_Handler
-                0x08000040                SysTick_Handler
                 0x08000040                PendSV_Handler
                 0x08000040                NMI_Handler
                 0x08000040                UsageFault_Handler
@@ -99,58 +151,75 @@ END GROUP
  .text.Reset_Handler
                 0x08000044       0x5c build/startup/startup.o
                 0x08000044                Reset_Handler
- .text.main     0x080000a0       0x6c build/app/main.o
-                0x080000a0                main
+ .text.clock_init_84mhz
+                0x080000a0       0xbc build/drivers/clock.o
+                0x080000a0                clock_init_84mhz
+ .text.systick_init
+                0x0800015c       0x20 build/drivers/systick.o
+                0x0800015c                systick_init
+ .text.SysTick_Handler
+                0x0800017c       0x10 build/drivers/systick.o
+                0x0800017c                SysTick_Handler
+ .text.millis   0x0800018c        0xc build/drivers/systick.o
+                0x0800018c                millis
+ .text.delay_ms
+                0x08000198       0x16 build/drivers/systick.o
+                0x08000198                delay_ms
+ *fill*         0x080001ae        0x2 
+ .text.main     0x080001b0       0x54 build/app/main.o
+                0x080001b0                main
  *(.rodata*)
-                0x0800010c                        . = ALIGN (0x4)
+                0x08000204                        . = ALIGN (0x4)
 
-.glue_7         0x0800010c        0x0
- .glue_7        0x0800010c        0x0 linker stubs
+.glue_7         0x08000204        0x0
+ .glue_7        0x08000204        0x0 linker stubs
 
-.glue_7t        0x0800010c        0x0
- .glue_7t       0x0800010c        0x0 linker stubs
+.glue_7t        0x08000204        0x0
+ .glue_7t       0x08000204        0x0 linker stubs
 
-.vfp11_veneer   0x0800010c        0x0
- .vfp11_veneer  0x0800010c        0x0 linker stubs
+.vfp11_veneer   0x08000204        0x0
+ .vfp11_veneer  0x08000204        0x0 linker stubs
 
-.v4_bx          0x0800010c        0x0
- .v4_bx         0x0800010c        0x0 linker stubs
+.v4_bx          0x08000204        0x0
+ .v4_bx         0x08000204        0x0 linker stubs
 
-.iplt           0x0800010c        0x0
- .iplt          0x0800010c        0x0 build/startup/startup.o
+.iplt           0x08000204        0x0
+ .iplt          0x08000204        0x0 build/startup/startup.o
 
-.rel.dyn        0x0800010c        0x0
- .rel.iplt      0x0800010c        0x0 build/startup/startup.o
+.rel.dyn        0x08000204        0x0
+ .rel.iplt      0x08000204        0x0 build/startup/startup.o
 
-.data           0x20000000        0x0 load address 0x0800010c
+.data           0x20000000        0x0 load address 0x08000204
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data*)
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _edata = .
-                0x0800010c                        _sidata = LOADADDR (.data)
+                0x08000204                        _sidata = LOADADDR (.data)
 
-.igot.plt       0x20000000        0x0 load address 0x0800010c
+.igot.plt       0x20000000        0x0 load address 0x08000204
  .igot.plt      0x20000000        0x0 build/startup/startup.o
 
-.bss            0x20000000        0x0 load address 0x0800010c
+.bss            0x20000000        0x4 load address 0x08000204
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sbss = .
  *(.bss*)
+ .bss.ms_ticks  0x20000000        0x4 build/drivers/systick.o
  *(COMMON)
-                0x20000000                        . = ALIGN (0x4)
-                0x20000000                        _ebss = .
+                0x20000004                        . = ALIGN (0x4)
+                0x20000004                        _ebss = .
 
 ._user_heap_stack
-                0x20000000      0x600 load address 0x0800010c
-                0x20000000                        . = ALIGN (0x8)
+                0x20000004      0x604 load address 0x08000204
+                0x20000008                        . = ALIGN (0x8)
+ *fill*         0x20000004        0x4 
                 [!provide]                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
-                0x20000200                        . = (. + _Min_Heap_Size)
- *fill*         0x20000000      0x200 
-                0x20000600                        . = (. + _Min_Stack_Size)
- *fill*         0x20000200      0x400 
-                0x20000600                        . = ALIGN (0x8)
+                0x20000208                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000008      0x200 
+                0x20000608                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000208      0x400 
+                0x20000608                        . = ALIGN (0x8)
 
 /DISCARD/
  *(.ARM.exidx*)
@@ -158,35 +227,51 @@ END GROUP
 OUTPUT(build/firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000      0x651
+.debug_info     0x00000000      0xae6
  .debug_info    0x00000000      0x32b build/startup/startup.o
- .debug_info    0x0000032b      0x326 build/app/main.o
+ .debug_info    0x0000032b      0x2f2 build/drivers/clock.o
+ .debug_info    0x0000061d      0x181 build/drivers/systick.o
+ .debug_info    0x0000079e      0x348 build/app/main.o
 
-.debug_abbrev   0x00000000      0x266
+.debug_abbrev   0x00000000      0x4e4
  .debug_abbrev  0x00000000      0x173 build/startup/startup.o
- .debug_abbrev  0x00000173       0xf3 build/app/main.o
+ .debug_abbrev  0x00000173      0x106 build/drivers/clock.o
+ .debug_abbrev  0x00000279      0x14c build/drivers/systick.o
+ .debug_abbrev  0x000003c5      0x11f build/app/main.o
 
 .debug_loclists
-                0x00000000       0x85
+                0x00000000      0x133
  .debug_loclists
                 0x00000000       0x5d build/startup/startup.o
  .debug_loclists
-                0x0000005d       0x28 build/app/main.o
+                0x0000005d       0x8b build/drivers/clock.o
+ .debug_loclists
+                0x000000e8       0x34 build/drivers/systick.o
+ .debug_loclists
+                0x0000011c       0x17 build/app/main.o
 
-.debug_aranges  0x00000000       0x48
+.debug_aranges  0x00000000       0xa0
  .debug_aranges
                 0x00000000       0x28 build/startup/startup.o
  .debug_aranges
-                0x00000028       0x20 build/app/main.o
+                0x00000028       0x20 build/drivers/clock.o
+ .debug_aranges
+                0x00000048       0x38 build/drivers/systick.o
+ .debug_aranges
+                0x00000080       0x20 build/app/main.o
 
 .debug_rnglists
-                0x00000000       0x50
+                0x00000000       0x65
  .debug_rnglists
                 0x00000000       0x19 build/startup/startup.o
  .debug_rnglists
-                0x00000019       0x37 build/app/main.o
+                0x00000019       0x14 build/drivers/clock.o
+ .debug_rnglists
+                0x0000002d       0x25 build/drivers/systick.o
+ .debug_rnglists
+                0x00000052       0x13 build/app/main.o
 
-.debug_macro    0x00000000     0xdd30
+.debug_macro    0x00000000     0xdeaf
  .debug_macro   0x00000000       0x8f build/startup/startup.o
  .debug_macro   0x0000008f      0xaf0 build/startup/startup.o
  .debug_macro   0x00000b7f      0x523 build/startup/startup.o
@@ -199,20 +284,33 @@ LOAD linker stubs
  .debug_macro   0x00002294      0x11f build/startup/startup.o
  .debug_macro   0x000023b3     0xb881 build/startup/startup.o
  .debug_macro   0x0000dc34       0x6d build/startup/startup.o
- .debug_macro   0x0000dca1       0x8f build/app/main.o
+ .debug_macro   0x0000dca1       0xc3 build/drivers/clock.o
+ .debug_macro   0x0000dd64       0x99 build/drivers/systick.o
+ .debug_macro   0x0000ddfd       0xa2 build/app/main.o
+ .debug_macro   0x0000de9f       0x10 build/app/main.o
 
-.debug_line     0x00000000      0x3c9
+.debug_line     0x00000000      0x820
  .debug_line    0x00000000      0x1df build/startup/startup.o
- .debug_line    0x000001df      0x1ea build/app/main.o
+ .debug_line    0x000001df      0x272 build/drivers/clock.o
+ .debug_line    0x00000451      0x201 build/drivers/systick.o
+ .debug_line    0x00000652      0x1ce build/app/main.o
 
-.debug_str      0x00000000    0x4fa5b
- .debug_str     0x00000000    0x4fa5b build/startup/startup.o
+.debug_str      0x00000000    0x4fba7
+ .debug_str     0x00000000    0x4fba7 build/startup/startup.o
                               0x4fcff (size before relaxing)
- .debug_str     0x0004fa5b        0x0 build/app/main.o
-                              0x4fd71 (size before relaxing)
+ .debug_str     0x0004fba7        0x0 build/drivers/clock.o
+                              0x4fe06 (size before relaxing)
+ .debug_str     0x0004fba7        0x0 build/drivers/systick.o
+                              0x4fca1 (size before relaxing)
+ .debug_str     0x0004fba7        0x0 build/app/main.o
+                              0x4fdc0 (size before relaxing)
 
 .comment        0x00000000       0x1e
  .comment       0x00000000       0x1e build/startup/startup.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000001e        0x0 build/drivers/clock.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000001e        0x0 build/drivers/systick.o
                                  0x1f (size before relaxing)
  .comment       0x0000001e        0x0 build/app/main.o
                                  0x1f (size before relaxing)
@@ -222,8 +320,14 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000       0x34 build/startup/startup.o
  .ARM.attributes
-                0x00000034       0x34 build/app/main.o
+                0x00000034       0x34 build/drivers/clock.o
+ .ARM.attributes
+                0x00000068       0x34 build/drivers/systick.o
+ .ARM.attributes
+                0x0000009c       0x34 build/app/main.o
 
-.debug_frame    0x00000000       0x5c
+.debug_frame    0x00000000       0xdc
  .debug_frame   0x00000000       0x38 build/startup/startup.o
- .debug_frame   0x00000038       0x24 build/app/main.o
+ .debug_frame   0x00000038       0x20 build/drivers/clock.o
+ .debug_frame   0x00000058       0x5c build/drivers/systick.o
+ .debug_frame   0x000000b4       0x28 build/app/main.o
