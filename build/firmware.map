@@ -1,3 +1,45 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+                              build/drivers/attitude.o (atan2f)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+                              build/drivers/attitude.o (sqrtf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+                              build/drivers/attitude.o (cosf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+                              build/drivers/attitude.o (fabsf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+                              build/drivers/oled.o (sinf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o) (__ieee754_sqrtf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o) (__kernel_cosf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o) (__kernel_sinf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o) (__ieee754_atan2f)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o) (__ieee754_rem_pio2f)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o) (atanf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o) (__kernel_rem_pio2f)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o) (scalbnf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o) (floorf)
+/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+                              build/app/main.o (__aeabi_ldivmod)
+/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
+/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o) (__aeabi_ldiv0)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+                              build/drivers/oled.o (memset)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o) (__errno)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o) (_impure_ptr)
 
 Merging object attributes
 
@@ -18,6 +60,29 @@ Discarded input sections
  .text          0x00000000        0x0 build/startup/startup.o
  .data          0x00000000        0x0 build/startup/startup.o
  .bss           0x00000000        0x0 build/startup/startup.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .group         0x00000000        0xc build/drivers/attitude.o
+ .text          0x00000000        0x0 build/drivers/attitude.o
+ .data          0x00000000        0x0 build/drivers/attitude.o
+ .bss           0x00000000        0x0 build/drivers/attitude.o
+ .debug_macro   0x00000000      0xaf0 build/drivers/attitude.o
+ .debug_macro   0x00000000      0x523 build/drivers/attitude.o
  .group         0x00000000        0xc build/drivers/clock.o
  .group         0x00000000        0xc build/drivers/clock.o
  .group         0x00000000        0xc build/drivers/clock.o
@@ -43,6 +108,83 @@ Discarded input sections
  .debug_macro   0x00000000      0x11f build/drivers/clock.o
  .debug_macro   0x00000000     0xb881 build/drivers/clock.o
  .debug_macro   0x00000000       0x6d build/drivers/clock.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/i2c.o
+ .text          0x00000000        0x0 build/drivers/i2c.o
+ .data          0x00000000        0x0 build/drivers/i2c.o
+ .bss           0x00000000        0x0 build/drivers/i2c.o
+ .debug_macro   0x00000000      0xaf0 build/drivers/i2c.o
+ .debug_macro   0x00000000       0x2e build/drivers/i2c.o
+ .debug_macro   0x00000000       0x28 build/drivers/i2c.o
+ .debug_macro   0x00000000      0x523 build/drivers/i2c.o
+ .debug_macro   0x00000000       0x1c build/drivers/i2c.o
+ .debug_macro   0x00000000       0x22 build/drivers/i2c.o
+ .debug_macro   0x00000000      0x107 build/drivers/i2c.o
+ .debug_macro   0x00000000     0x1057 build/drivers/i2c.o
+ .debug_macro   0x00000000      0x11f build/drivers/i2c.o
+ .debug_macro   0x00000000     0xb881 build/drivers/i2c.o
+ .debug_macro   0x00000000       0x6d build/drivers/i2c.o
+ .group         0x00000000        0xc build/drivers/mpu6500.o
+ .group         0x00000000        0xc build/drivers/mpu6500.o
+ .text          0x00000000        0x0 build/drivers/mpu6500.o
+ .data          0x00000000        0x0 build/drivers/mpu6500.o
+ .bss           0x00000000        0x0 build/drivers/mpu6500.o
+ .debug_macro   0x00000000      0xaf0 build/drivers/mpu6500.o
+ .debug_macro   0x00000000      0x523 build/drivers/mpu6500.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .group         0x00000000        0xc build/drivers/oled.o
+ .text          0x00000000        0x0 build/drivers/oled.o
+ .data          0x00000000        0x0 build/drivers/oled.o
+ .bss           0x00000000        0x0 build/drivers/oled.o
+ .text.oled_test_pattern
+                0x00000000       0x18 build/drivers/oled.o
+ .text.oled_test_half_screen
+                0x00000000       0x34 build/drivers/oled.o
+ .debug_macro   0x00000000      0xaf0 build/drivers/oled.o
+ .debug_macro   0x00000000      0x523 build/drivers/oled.o
+ .debug_macro   0x00000000       0x22 build/drivers/oled.o
+ .debug_macro   0x00000000       0x6e build/drivers/oled.o
+ .debug_macro   0x00000000       0x2a build/drivers/oled.o
+ .debug_macro   0x00000000       0x94 build/drivers/oled.o
+ .debug_macro   0x00000000       0x3c build/drivers/oled.o
+ .debug_macro   0x00000000       0x34 build/drivers/oled.o
+ .debug_macro   0x00000000      0x1a5 build/drivers/oled.o
+ .debug_macro   0x00000000       0x57 build/drivers/oled.o
+ .debug_macro   0x00000000      0x364 build/drivers/oled.o
+ .debug_macro   0x00000000       0x16 build/drivers/oled.o
+ .debug_macro   0x00000000       0x4a build/drivers/oled.o
+ .debug_macro   0x00000000       0x34 build/drivers/oled.o
+ .debug_macro   0x00000000       0x10 build/drivers/oled.o
+ .debug_macro   0x00000000       0x58 build/drivers/oled.o
+ .debug_macro   0x00000000      0x1de build/drivers/oled.o
+ .debug_macro   0x00000000      0x19b build/drivers/oled.o
  .group         0x00000000        0xc build/drivers/systick.o
  .group         0x00000000        0xc build/drivers/systick.o
  .group         0x00000000        0xc build/drivers/systick.o
@@ -109,9 +251,9 @@ Discarded input sections
  .data          0x00000000        0x0 build/app/main.o
  .bss           0x00000000        0x0 build/app/main.o
  .debug_macro   0x00000000      0xaf0 build/app/main.o
+ .debug_macro   0x00000000      0x523 build/app/main.o
  .debug_macro   0x00000000       0x2e build/app/main.o
  .debug_macro   0x00000000       0x28 build/app/main.o
- .debug_macro   0x00000000      0x523 build/app/main.o
  .debug_macro   0x00000000       0x1c build/app/main.o
  .debug_macro   0x00000000       0x22 build/app/main.o
  .debug_macro   0x00000000      0x107 build/app/main.o
@@ -119,6 +261,68 @@ Discarded input sections
  .debug_macro   0x00000000      0x11f build/app/main.o
  .debug_macro   0x00000000     0xb881 build/app/main.o
  .debug_macro   0x00000000       0x6d build/app/main.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.extab.text.__udivmoddi4
+                0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx.text.__udivmoddi4
+                0x00000000        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
 
 Memory Configuration
 
@@ -130,10 +334,15 @@ RAM              0x20000000         0x00018000         xrw
 Linker script and memory map
 
 LOAD build/startup/startup.o
+LOAD build/drivers/attitude.o
 LOAD build/drivers/clock.o
+LOAD build/drivers/i2c.o
+LOAD build/drivers/mpu6500.o
+LOAD build/drivers/oled.o
 LOAD build/drivers/systick.o
 LOAD build/drivers/uart.o
 LOAD build/app/main.o
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 START GROUP
 LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a
 LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
@@ -159,7 +368,7 @@ END GROUP
                 0x08000000                vector_table
                 0x080000dc                        . = ALIGN (0x4)
 
-.text           0x080000dc      0x30c
+.text           0x080000dc     0x2e58
                 0x080000dc                        . = ALIGN (0x4)
  *(.text*)
  .text.Default_Handler
@@ -177,91 +386,251 @@ END GROUP
  .text.Reset_Handler
                 0x080000e0       0x5c build/startup/startup.o
                 0x080000e0                Reset_Handler
+ .text.wrap_degrees
+                0x0800013c       0x40 build/drivers/attitude.o
+ .text.calculate_acc_angles
+                0x0800017c       0x94 build/drivers/attitude.o
+ .text.attitude_init
+                0x08000210       0x3e build/drivers/attitude.o
+                0x08000210                attitude_init
+ *fill*         0x0800024e        0x2 
+ .text.attitude_update
+                0x08000250      0x138 build/drivers/attitude.o
+                0x08000250                attitude_update
  .text.clock_init_84mhz
-                0x0800013c       0xbc build/drivers/clock.o
-                0x0800013c                clock_init_84mhz
+                0x08000388       0xbc build/drivers/clock.o
+                0x08000388                clock_init_84mhz
+ .text.i2c1_wait_sr1
+                0x08000444       0x2c build/drivers/i2c.o
+ .text.i2c1_wait_bus_free
+                0x08000470       0x28 build/drivers/i2c.o
+ .text.i2c1_abort
+                0x08000498       0x34 build/drivers/i2c.o
+ .text.i2c1_init
+                0x080004cc       0x90 build/drivers/i2c.o
+                0x080004cc                i2c1_init
+ .text.i2c1_write_reg
+                0x0800055c       0x7c build/drivers/i2c.o
+                0x0800055c                i2c1_write_reg
+ .text.i2c1_read_regs
+                0x080005d8      0x1a8 build/drivers/i2c.o
+                0x080005d8                i2c1_read_regs
+ .text.i2c1_write_buf
+                0x08000780       0xa4 build/drivers/i2c.o
+                0x08000780                i2c1_write_buf
+ .text.make_int16
+                0x08000824        0x8 build/drivers/mpu6500.o
+ .text.mpu6500_init
+                0x0800082c       0x80 build/drivers/mpu6500.o
+                0x0800082c                mpu6500_init
+ .text.mpu6500_read_raw
+                0x080008ac       0x8a build/drivers/mpu6500.o
+                0x080008ac                mpu6500_read_raw
+ *fill*         0x08000936        0x2 
+ .text.oled_pixel
+                0x08000938       0x44 build/drivers/oled.o
+ .text.oled_is_ground
+                0x0800097c       0x64 build/drivers/oled.o
+ .text.oled_contrast_pixel
+                0x080009e0       0x1a build/drivers/oled.o
+ .text.oled_line
+                0x080009fa       0x8c build/drivers/oled.o
+ *fill*         0x08000a86        0x2 
+ .text.oled_rotated_line
+                0x08000a88       0x84 build/drivers/oled.o
+ .text.oled_draw_horizon_line
+                0x08000b0c       0x24 build/drivers/oled.o
+ .text.oled_draw_pitch_ladder
+                0x08000b30       0x78 build/drivers/oled.o
+ .text.oled_draw_aircraft
+                0x08000ba8       0x58 build/drivers/oled.o
+ .text.oled_draw_roll_indicator
+                0x08000c00       0xe0 build/drivers/oled.o
+ .text.oled_update_page
+                0x08000ce0       0x50 build/drivers/oled.o
+                0x08000ce0                oled_update_page
+ .text.oled_update
+                0x08000d30       0x20 build/drivers/oled.o
+                0x08000d30                oled_update
+ .text.oled_clear
+                0x08000d50       0x14 build/drivers/oled.o
+                0x08000d50                oled_clear
+ .text.oled_init
+                0x08000d64       0x24 build/drivers/oled.o
+                0x08000d64                oled_init
+ .text.oled_draw_horizon
+                0x08000d88       0xc8 build/drivers/oled.o
+                0x08000d88                oled_draw_horizon
  .text.systick_init
-                0x080001f8       0x20 build/drivers/systick.o
-                0x080001f8                systick_init
+                0x08000e50       0x20 build/drivers/systick.o
+                0x08000e50                systick_init
  .text.SysTick_Handler
-                0x08000218       0x10 build/drivers/systick.o
-                0x08000218                SysTick_Handler
- .text.millis   0x08000228        0xc build/drivers/systick.o
-                0x08000228                millis
+                0x08000e70       0x10 build/drivers/systick.o
+                0x08000e70                SysTick_Handler
+ .text.millis   0x08000e80        0xc build/drivers/systick.o
+                0x08000e80                millis
  .text.delay_ms
-                0x08000234       0x16 build/drivers/systick.o
-                0x08000234                delay_ms
- *fill*         0x0800024a        0x2 
+                0x08000e8c       0x16 build/drivers/systick.o
+                0x08000e8c                delay_ms
+ *fill*         0x08000ea2        0x2 
  .text.uart_init
-                0x0800024c       0x5c build/drivers/uart.o
-                0x0800024c                uart_init
+                0x08000ea4       0x5c build/drivers/uart.o
+                0x08000ea4                uart_init
  .text.uart_putc
-                0x080002a8       0x44 build/drivers/uart.o
-                0x080002a8                uart_putc
+                0x08000f00       0x44 build/drivers/uart.o
+                0x08000f00                uart_putc
  .text.uart_write
-                0x080002ec       0x14 build/drivers/uart.o
-                0x080002ec                uart_write
+                0x08000f44       0x14 build/drivers/uart.o
+                0x08000f44                uart_write
  .text.USART2_IRQHandler
-                0x08000300       0x6c build/drivers/uart.o
-                0x08000300                USART2_IRQHandler
- .text.main     0x0800036c       0x68 build/app/main.o
-                0x0800036c                main
+                0x08000f58       0x6c build/drivers/uart.o
+                0x08000f58                USART2_IRQHandler
+ .text.gyro_calibrate
+                0x08000fc4       0xbc build/app/main.o
+ .text.uart_write_i32
+                0x08001080      0x110 build/app/main.o
+ .text.uart_write_float2
+                0x08001190       0x5c build/app/main.o
+ .text.main     0x080011ec      0x250 build/app/main.o
+                0x080011ec                main
+ .text.atan2f   0x0800143c        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+                0x0800143c                atan2f
+ .text.sqrtf    0x08001440       0x50 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+                0x08001440                sqrtf
+ .text.cosf     0x08001490       0x70 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+                0x08001490                cosf
+ .text.fabsf    0x08001500       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+                0x08001500                fabsf
+ .text.sinf     0x08001510       0x74 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+                0x08001510                sinf
+ .text.__ieee754_sqrtf
+                0x08001584        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+                0x08001584                __ieee754_sqrtf
+ .text.__kernel_cosf
+                0x0800158c      0x100 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+                0x0800158c                __kernel_cosf
+ .text.__kernel_sinf
+                0x0800168c       0x90 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+                0x0800168c                __kernel_sinf
+ .text.__ieee754_atan2f
+                0x0800171c      0x154 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+                0x0800171c                __ieee754_atan2f
+ .text.__ieee754_rem_pio2f
+                0x08001870      0x268 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+                0x08001870                __ieee754_rem_pio2f
+ .text.atanf    0x08001ad8      0x1bc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+                0x08001ad8                atanf
+ .text.__kernel_rem_pio2f
+                0x08001c94      0x6f8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+                0x08001c94                __kernel_rem_pio2f
+ .text.scalbnf  0x0800238c       0xe4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+                0x0800238c                scalbnf
+ .text.floorf   0x08002470       0x98 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+                0x08002470                floorf
+ .text          0x08002508       0xa0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+                0x08002508                __aeabi_ldivmod
+ .text.__udivmoddi4
+                0x080025a8      0x2b8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x080025a8                __udivmoddi4
+ .text          0x08002860        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                0x08002860                __aeabi_ldiv0
+                0x08002860                __aeabi_idiv0
+ .text.memset   0x08002864       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+                0x08002864                memset
+ .text.__errno  0x08002874        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+                0x08002874                __errno
  *(.rodata*)
+ .rodata.commands.0
+                0x08002880       0x1a build/drivers/oled.o
+ *fill*         0x0800289a        0x2 
+ .rodata.gyro_calibrate.str1.4
+                0x0800289c      0x28f build/app/main.o
+                                 0x3f (size before relaxing)
  .rodata.main.str1.4
-                0x080003d4       0x14 build/app/main.o
-                0x080003e8                        . = ALIGN (0x4)
+                0x08002b2b        0x0 build/app/main.o
+                                0x253 (size before relaxing)
+ *fill*         0x08002b2b        0x1 
+ .rodata.CSWTCH.7
+                0x08002b2c        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .rodata.CSWTCH.6
+                0x08002b38        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .rodata.npio2_hw
+                0x08002b44       0x80 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .rodata.two_over_pi
+                0x08002bc4      0x318 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .rodata.atanlo
+                0x08002edc       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .rodata.atanhi
+                0x08002eec       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .rodata.PIo2   0x08002efc       0x2c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+ .rodata.init_jk
+                0x08002f28        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+                0x08002f34                        . = ALIGN (0x4)
 
-.glue_7         0x080003e8        0x0
- .glue_7        0x080003e8        0x0 linker stubs
+.glue_7         0x08002f34        0x0
+ .glue_7        0x08002f34        0x0 linker stubs
 
-.glue_7t        0x080003e8        0x0
- .glue_7t       0x080003e8        0x0 linker stubs
+.glue_7t        0x08002f34        0x0
+ .glue_7t       0x08002f34        0x0 linker stubs
 
-.vfp11_veneer   0x080003e8        0x0
- .vfp11_veneer  0x080003e8        0x0 linker stubs
+.vfp11_veneer   0x08002f34        0x0
+ .vfp11_veneer  0x08002f34        0x0 linker stubs
 
-.v4_bx          0x080003e8        0x0
- .v4_bx         0x080003e8        0x0 linker stubs
+.v4_bx          0x08002f34        0x0
+ .v4_bx         0x08002f34        0x0 linker stubs
 
-.iplt           0x080003e8        0x0
- .iplt          0x080003e8        0x0 build/startup/startup.o
+.iplt           0x08002f34        0x0
+ .iplt          0x08002f34        0x0 build/startup/startup.o
 
-.rel.dyn        0x080003e8        0x0
- .rel.iplt      0x080003e8        0x0 build/startup/startup.o
+.rel.dyn        0x08002f34        0x0
+ .rel.iplt      0x08002f34        0x0 build/startup/startup.o
 
-.data           0x20000000        0x0 load address 0x080003e8
+.data           0x20000000       0x50 load address 0x08002f34
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data*)
-                0x20000000                        . = ALIGN (0x4)
-                0x20000000                        _edata = .
-                0x080003e8                        _sidata = LOADADDR (.data)
+ .data._impure_ptr
+                0x20000000        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
+                0x20000000                _impure_ptr
+ .data._impure_data
+                0x20000004       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
+                0x20000004                _impure_data
+                0x20000050                        . = ALIGN (0x4)
+                0x20000050                        _edata = .
+                0x08002f34                        _sidata = LOADADDR (.data)
 
-.igot.plt       0x20000000        0x0 load address 0x080003e8
- .igot.plt      0x20000000        0x0 build/startup/startup.o
+.igot.plt       0x20000050        0x0 load address 0x08002f84
+ .igot.plt      0x20000050        0x0 build/startup/startup.o
 
-.bss            0x20000000       0x88 load address 0x080003e8
-                0x20000000                        . = ALIGN (0x4)
-                0x20000000                        _sbss = .
+.bss            0x20000050      0x494 load address 0x08002f84
+                0x20000050                        . = ALIGN (0x4)
+                0x20000050                        _sbss = .
  *(.bss*)
- .bss.ms_ticks  0x20000000        0x4 build/drivers/systick.o
- .bss.tx_tail   0x20000004        0x2 build/drivers/uart.o
- .bss.tx_head   0x20000006        0x2 build/drivers/uart.o
- .bss.tx_buf    0x20000008       0x80 build/drivers/uart.o
+ .bss.horizon_offset
+                0x20000050        0x4 build/drivers/oled.o
+ .bss.roll_cos  0x20000054        0x4 build/drivers/oled.o
+ .bss.roll_sin  0x20000058        0x4 build/drivers/oled.o
+ .bss.framebuffer
+                0x2000005c      0x400 build/drivers/oled.o
+ .bss.ms_ticks  0x2000045c        0x4 build/drivers/systick.o
+ .bss.tx_tail   0x20000460        0x2 build/drivers/uart.o
+ .bss.tx_head   0x20000462        0x2 build/drivers/uart.o
+ .bss.tx_buf    0x20000464       0x80 build/drivers/uart.o
  *(COMMON)
-                0x20000088                        . = ALIGN (0x4)
-                0x20000088                        _ebss = .
+                0x200004e4                        . = ALIGN (0x4)
+                0x200004e4                        _ebss = .
 
 ._user_heap_stack
-                0x20000088      0x600 load address 0x080003e8
-                0x20000088                        . = ALIGN (0x8)
+                0x200004e4      0x604 load address 0x08002f84
+                0x200004e8                        . = ALIGN (0x8)
+ *fill*         0x200004e4        0x4 
                 [!provide]                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
-                0x20000288                        . = (. + _Min_Heap_Size)
- *fill*         0x20000088      0x200 
-                0x20000688                        . = (. + _Min_Stack_Size)
- *fill*         0x20000288      0x400 
-                0x20000688                        . = ALIGN (0x8)
+                0x200006e8                        . = (. + _Min_Heap_Size)
+ *fill*         0x200004e8      0x200 
+                0x20000ae8                        . = (. + _Min_Stack_Size)
+ *fill*         0x200006e8      0x400 
+                0x20000ae8                        . = ALIGN (0x8)
 
 /DISCARD/
  *(.ARM.exidx*)
@@ -269,59 +638,181 @@ END GROUP
 OUTPUT(build/firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000     0x1332
+.debug_info     0x00000000     0x4c75
  .debug_info    0x00000000      0x32b build/startup/startup.o
- .debug_info    0x0000032b      0x2f2 build/drivers/clock.o
- .debug_info    0x0000061d      0x181 build/drivers/systick.o
- .debug_info    0x0000079e      0x9d1 build/drivers/uart.o
- .debug_info    0x0000116f      0x1c3 build/app/main.o
+ .debug_info    0x0000032b      0x504 build/drivers/attitude.o
+ .debug_info    0x0000082f      0x2f2 build/drivers/clock.o
+ .debug_info    0x00000b21      0x737 build/drivers/i2c.o
+ .debug_info    0x00001258      0x332 build/drivers/mpu6500.o
+ .debug_info    0x0000158a      0xb38 build/drivers/oled.o
+ .debug_info    0x000020c2      0x181 build/drivers/systick.o
+ .debug_info    0x00002243      0x9d1 build/drivers/uart.o
+ .debug_info    0x00002c14      0xa05 build/app/main.o
+ .debug_info    0x00003619       0x25 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_info    0x0000363e      0x6fc /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x00003d3a       0x3c /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00003d76       0xe5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .debug_info    0x00003e5b      0x700 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+ .debug_info    0x0000455b      0x71a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
 
-.debug_abbrev   0x00000000      0x6fb
+.debug_abbrev   0x00000000     0x1403
  .debug_abbrev  0x00000000      0x173 build/startup/startup.o
- .debug_abbrev  0x00000173      0x106 build/drivers/clock.o
- .debug_abbrev  0x00000279      0x14c build/drivers/systick.o
- .debug_abbrev  0x000003c5      0x21d build/drivers/uart.o
- .debug_abbrev  0x000005e2      0x119 build/app/main.o
+ .debug_abbrev  0x00000173      0x16d build/drivers/attitude.o
+ .debug_abbrev  0x000002e0      0x106 build/drivers/clock.o
+ .debug_abbrev  0x000003e6      0x213 build/drivers/i2c.o
+ .debug_abbrev  0x000005f9      0x14a build/drivers/mpu6500.o
+ .debug_abbrev  0x00000743      0x287 build/drivers/oled.o
+ .debug_abbrev  0x000009ca      0x14c build/drivers/systick.o
+ .debug_abbrev  0x00000b16      0x21d build/drivers/uart.o
+ .debug_abbrev  0x00000d33      0x1cf build/app/main.o
+ .debug_abbrev  0x00000f02       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_abbrev  0x00000f16      0x170 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x00001086       0x26 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x000010ac       0xa4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x00001150      0x164 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+ .debug_abbrev  0x000012b4      0x14f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
 
 .debug_loclists
-                0x00000000      0x1a6
+                0x00000000     0x361b
  .debug_loclists
                 0x00000000       0x5d build/startup/startup.o
  .debug_loclists
-                0x0000005d       0x8b build/drivers/clock.o
+                0x0000005d      0x36f build/drivers/attitude.o
  .debug_loclists
-                0x000000e8       0x34 build/drivers/systick.o
+                0x000003cc       0x8b build/drivers/clock.o
  .debug_loclists
-                0x0000011c       0x5e build/drivers/uart.o
+                0x00000457      0x2d6 build/drivers/i2c.o
  .debug_loclists
-                0x0000017a       0x2c build/app/main.o
+                0x0000072d       0x59 build/drivers/mpu6500.o
+ .debug_loclists
+                0x00000786      0x539 build/drivers/oled.o
+ .debug_loclists
+                0x00000cbf       0x34 build/drivers/systick.o
+ .debug_loclists
+                0x00000cf3       0x5e build/drivers/uart.o
+ .debug_loclists
+                0x00000d51      0x416 build/app/main.o
+ .debug_loclists
+                0x00001167       0x40 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+ .debug_loclists
+                0x000011a7       0x4e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+ .debug_loclists
+                0x000011f5       0x75 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+ .debug_loclists
+                0x0000126a       0x4e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .debug_loclists
+                0x000012b8       0x75 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+ .debug_loclists
+                0x0000132d       0x32 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .debug_loclists
+                0x0000135f      0x15e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+ .debug_loclists
+                0x000014bd       0xbf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+ .debug_loclists
+                0x0000157c      0x3d8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .debug_loclists
+                0x00001954      0x420 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .debug_loclists
+                0x00001d74      0x1bf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .debug_loclists
+                0x00001f33      0x9b1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+ .debug_loclists
+                0x000028e4      0x273 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .debug_loclists
+                0x00002b57       0xe2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+ .debug_loclists
+                0x00002c39      0x995 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_loclists
+                0x000035ce       0x4d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
 
-.debug_aranges  0x00000000       0xd8
+.debug_aranges  0x00000000      0x2f8
  .debug_aranges
                 0x00000000       0x28 build/startup/startup.o
  .debug_aranges
-                0x00000028       0x20 build/drivers/clock.o
+                0x00000028       0x38 build/drivers/attitude.o
  .debug_aranges
-                0x00000048       0x38 build/drivers/systick.o
+                0x00000060       0x20 build/drivers/clock.o
  .debug_aranges
-                0x00000080       0x38 build/drivers/uart.o
+                0x00000080       0x50 build/drivers/i2c.o
  .debug_aranges
-                0x000000b8       0x20 build/app/main.o
+                0x000000d0       0x30 build/drivers/mpu6500.o
+ .debug_aranges
+                0x00000100       0x98 build/drivers/oled.o
+ .debug_aranges
+                0x00000198       0x38 build/drivers/systick.o
+ .debug_aranges
+                0x000001d0       0x38 build/drivers/uart.o
+ .debug_aranges
+                0x00000208       0x38 build/app/main.o
+ .debug_aranges
+                0x00000240       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_aranges
+                0x00000260       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_aranges
+                0x00000280       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x000002a0       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .debug_aranges
+                0x000002c0       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+ .debug_aranges
+                0x000002e0       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
 
 .debug_rnglists
-                0x00000000       0x96
+                0x00000000      0x3e6
  .debug_rnglists
                 0x00000000       0x19 build/startup/startup.o
  .debug_rnglists
-                0x00000019       0x14 build/drivers/clock.o
+                0x00000019       0x27 build/drivers/attitude.o
  .debug_rnglists
-                0x0000002d       0x25 build/drivers/systick.o
+                0x00000040       0x14 build/drivers/clock.o
  .debug_rnglists
-                0x00000052       0x25 build/drivers/uart.o
+                0x00000054       0x46 build/drivers/i2c.o
  .debug_rnglists
-                0x00000077       0x1f build/app/main.o
+                0x0000009a       0x21 build/drivers/mpu6500.o
+ .debug_rnglists
+                0x000000bb       0xbc build/drivers/oled.o
+ .debug_rnglists
+                0x00000177       0x25 build/drivers/systick.o
+ .debug_rnglists
+                0x0000019c       0x25 build/drivers/uart.o
+ .debug_rnglists
+                0x000001c1       0x38 build/app/main.o
+ .debug_rnglists
+                0x000001f9       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+ .debug_rnglists
+                0x0000020c       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+ .debug_rnglists
+                0x0000021f       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+ .debug_rnglists
+                0x00000232       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .debug_rnglists
+                0x00000245       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+ .debug_rnglists
+                0x00000258       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .debug_rnglists
+                0x0000026b       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+ .debug_rnglists
+                0x0000027f       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+ .debug_rnglists
+                0x00000293       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .debug_rnglists
+                0x000002b3       0x2c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .debug_rnglists
+                0x000002df       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .debug_rnglists
+                0x000002f3       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+ .debug_rnglists
+                0x00000307       0x38 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .debug_rnglists
+                0x0000033f       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+ .debug_rnglists
+                0x00000353       0x6d /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_rnglists
+                0x000003c0       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .debug_rnglists
+                0x000003d3       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
 
-.debug_macro    0x00000000     0xdf64
+.debug_macro    0x00000000     0xef0b
  .debug_macro   0x00000000       0x8f build/startup/startup.o
  .debug_macro   0x0000008f      0xaf0 build/startup/startup.o
  .debug_macro   0x00000b7f      0x523 build/startup/startup.o
@@ -334,41 +825,109 @@ LOAD linker stubs
  .debug_macro   0x00002294      0x11f build/startup/startup.o
  .debug_macro   0x000023b3     0xb881 build/startup/startup.o
  .debug_macro   0x0000dc34       0x6d build/startup/startup.o
- .debug_macro   0x0000dca1       0xc3 build/drivers/clock.o
- .debug_macro   0x0000dd64       0x99 build/drivers/systick.o
- .debug_macro   0x0000ddfd       0xab build/drivers/uart.o
- .debug_macro   0x0000dea8       0xac build/app/main.o
- .debug_macro   0x0000df54       0x10 build/app/main.o
+ .debug_macro   0x0000dca1      0x10e build/drivers/attitude.o
+ .debug_macro   0x0000ddaf       0x22 build/drivers/attitude.o
+ .debug_macro   0x0000ddd1       0x6e build/drivers/attitude.o
+ .debug_macro   0x0000de3f       0x2a build/drivers/attitude.o
+ .debug_macro   0x0000de69       0x94 build/drivers/attitude.o
+ .debug_macro   0x0000defd       0x3c build/drivers/attitude.o
+ .debug_macro   0x0000df39       0x34 build/drivers/attitude.o
+ .debug_macro   0x0000df6d      0x1a5 build/drivers/attitude.o
+ .debug_macro   0x0000e112       0x57 build/drivers/attitude.o
+ .debug_macro   0x0000e169      0x364 build/drivers/attitude.o
+ .debug_macro   0x0000e4cd       0x16 build/drivers/attitude.o
+ .debug_macro   0x0000e4e3       0x4a build/drivers/attitude.o
+ .debug_macro   0x0000e52d       0x34 build/drivers/attitude.o
+ .debug_macro   0x0000e561       0x10 build/drivers/attitude.o
+ .debug_macro   0x0000e571       0x58 build/drivers/attitude.o
+ .debug_macro   0x0000e5c9      0x1de build/drivers/attitude.o
+ .debug_macro   0x0000e7a7      0x19b build/drivers/attitude.o
+ .debug_macro   0x0000e942       0xc3 build/drivers/clock.o
+ .debug_macro   0x0000ea05       0xa5 build/drivers/i2c.o
+ .debug_macro   0x0000eaaa       0x74 build/drivers/mpu6500.o
+ .debug_macro   0x0000eb1e      0x15b build/drivers/oled.o
+ .debug_macro   0x0000ec79       0x10 build/drivers/oled.o
+ .debug_macro   0x0000ec89       0x3c build/drivers/oled.o
+ .debug_macro   0x0000ecc5       0x99 build/drivers/systick.o
+ .debug_macro   0x0000ed5e       0xab build/drivers/uart.o
+ .debug_macro   0x0000ee09       0xf2 build/app/main.o
+ .debug_macro   0x0000eefb       0x10 build/app/main.o
 
-.debug_line     0x00000000      0xb21
+.debug_line     0x00000000     0x2bc2
  .debug_line    0x00000000      0x1df build/startup/startup.o
- .debug_line    0x000001df      0x272 build/drivers/clock.o
- .debug_line    0x00000451      0x201 build/drivers/systick.o
- .debug_line    0x00000652      0x2f2 build/drivers/uart.o
- .debug_line    0x00000944      0x1dd build/app/main.o
+ .debug_line    0x000001df      0x3e8 build/drivers/attitude.o
+ .debug_line    0x000005c7      0x272 build/drivers/clock.o
+ .debug_line    0x00000839      0x712 build/drivers/i2c.o
+ .debug_line    0x00000f4b      0x1eb build/drivers/mpu6500.o
+ .debug_line    0x00001136      0x727 build/drivers/oled.o
+ .debug_line    0x0000185d      0x201 build/drivers/systick.o
+ .debug_line    0x00001a5e      0x2f2 build/drivers/uart.o
+ .debug_line    0x00001d50      0x4f7 build/app/main.o
+ .debug_line    0x00002247       0x6c /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_line    0x000022b3      0x565 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x00002818       0x4a /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00002862      0x12e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .debug_line    0x00002990      0x12a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+ .debug_line    0x00002aba      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
 
-.debug_str      0x00000000    0x50038
- .debug_str     0x00000000    0x50038 build/startup/startup.o
+.debug_str      0x00000000    0x54cb6
+ .debug_str     0x00000000    0x54cb6 build/startup/startup.o
                               0x4fcff (size before relaxing)
- .debug_str     0x00050038        0x0 build/drivers/clock.o
+ .debug_str     0x00054cb6        0x0 build/drivers/attitude.o
+                               0x7b68 (size before relaxing)
+ .debug_str     0x00054cb6        0x0 build/drivers/clock.o
                               0x4fe06 (size before relaxing)
- .debug_str     0x00050038        0x0 build/drivers/systick.o
+ .debug_str     0x00054cb6        0x0 build/drivers/i2c.o
+                              0x4fea3 (size before relaxing)
+ .debug_str     0x00054cb6        0x0 build/drivers/mpu6500.o
+                               0x4113 (size before relaxing)
+ .debug_str     0x00054cb6        0x0 build/drivers/oled.o
+                               0x7c50 (size before relaxing)
+ .debug_str     0x00054cb6        0x0 build/drivers/systick.o
                               0x4fca1 (size before relaxing)
- .debug_str     0x00050038        0x0 build/drivers/uart.o
+ .debug_str     0x00054cb6        0x0 build/drivers/uart.o
                               0x5027f (size before relaxing)
- .debug_str     0x00050038        0x0 build/app/main.o
-                              0x4fca7 (size before relaxing)
+ .debug_str     0x00054cb6        0x0 build/app/main.o
+                              0x4ff7e (size before relaxing)
+ .debug_str     0x00054cb6        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+                                 0x9e (size before relaxing)
+ .debug_str     0x00054cb6        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                                0x697 (size before relaxing)
+ .debug_str     0x00054cb6        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                                 0xbe (size before relaxing)
+ .debug_str     0x00054cb6        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+                                0x1bf (size before relaxing)
+ .debug_str     0x00054cb6        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+                                0x4d9 (size before relaxing)
+ .debug_str     0x00054cb6        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
+                                0x4df (size before relaxing)
 
-.comment        0x00000000       0x1e
- .comment       0x00000000       0x1e build/startup/startup.o
+.comment        0x00000000       0x3c
+ .comment       0x00000000       0x3c build/startup/startup.o
                                  0x1f (size before relaxing)
- .comment       0x0000001e        0x0 build/drivers/clock.o
+ .comment       0x0000003c        0x0 build/drivers/attitude.o
                                  0x1f (size before relaxing)
- .comment       0x0000001e        0x0 build/drivers/systick.o
+ .comment       0x0000003c        0x0 build/drivers/clock.o
                                  0x1f (size before relaxing)
- .comment       0x0000001e        0x0 build/drivers/uart.o
+ .comment       0x0000003c        0x0 build/drivers/i2c.o
                                  0x1f (size before relaxing)
- .comment       0x0000001e        0x0 build/app/main.o
+ .comment       0x0000003c        0x0 build/drivers/mpu6500.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/drivers/oled.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/drivers/systick.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/drivers/uart.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app/main.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
                                  0x1f (size before relaxing)
 
 .ARM.attributes
@@ -376,17 +935,96 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000       0x34 build/startup/startup.o
  .ARM.attributes
-                0x00000034       0x34 build/drivers/clock.o
+                0x00000034       0x34 build/drivers/attitude.o
  .ARM.attributes
-                0x00000068       0x34 build/drivers/systick.o
+                0x00000068       0x34 build/drivers/clock.o
  .ARM.attributes
-                0x0000009c       0x34 build/drivers/uart.o
+                0x0000009c       0x34 build/drivers/i2c.o
  .ARM.attributes
-                0x000000d0       0x34 build/app/main.o
+                0x000000d0       0x34 build/drivers/mpu6500.o
+ .ARM.attributes
+                0x00000104       0x34 build/drivers/oled.o
+ .ARM.attributes
+                0x00000138       0x34 build/drivers/systick.o
+ .ARM.attributes
+                0x0000016c       0x34 build/drivers/uart.o
+ .ARM.attributes
+                0x000001a0       0x34 build/app/main.o
+ .ARM.attributes
+                0x000001d4       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+ .ARM.attributes
+                0x00000208       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+ .ARM.attributes
+                0x0000023c       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+ .ARM.attributes
+                0x00000270       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .ARM.attributes
+                0x000002a4       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+ .ARM.attributes
+                0x000002d8       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .ARM.attributes
+                0x0000030c       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+ .ARM.attributes
+                0x00000340       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+ .ARM.attributes
+                0x00000374       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .ARM.attributes
+                0x000003a8       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .ARM.attributes
+                0x000003dc       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .ARM.attributes
+                0x00000410       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+ .ARM.attributes
+                0x00000444       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .ARM.attributes
+                0x00000478       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+ .ARM.attributes
+                0x000004ac       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x000004ce       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000502       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000524       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .ARM.attributes
+                0x00000558       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+ .ARM.attributes
+                0x0000058c       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
 
-.debug_frame    0x00000000      0x138
+.debug_frame    0x00000000      0x8fc
  .debug_frame   0x00000000       0x38 build/startup/startup.o
- .debug_frame   0x00000038       0x20 build/drivers/clock.o
- .debug_frame   0x00000058       0x5c build/drivers/systick.o
- .debug_frame   0x000000b4       0x58 build/drivers/uart.o
- .debug_frame   0x0000010c       0x2c build/app/main.o
+ .debug_frame   0x00000038       0xc8 build/drivers/attitude.o
+ .debug_frame   0x00000100       0x20 build/drivers/clock.o
+ .debug_frame   0x00000120       0xc0 build/drivers/i2c.o
+ .debug_frame   0x000001e0       0x64 build/drivers/mpu6500.o
+ .debug_frame   0x00000244      0x1f0 build/drivers/oled.o
+ .debug_frame   0x00000434       0x5c build/drivers/systick.o
+ .debug_frame   0x00000490       0x58 build/drivers/uart.o
+ .debug_frame   0x000004e8       0x9c build/app/main.o
+ .debug_frame   0x00000584       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
+ .debug_frame   0x000005a4       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
+ .debug_frame   0x000005ec       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_cos.o)
+ .debug_frame   0x00000620       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
+ .debug_frame   0x00000640       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_sin.o)
+ .debug_frame   0x00000674       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_sqrt.o)
+ .debug_frame   0x00000694       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_cos.o)
+ .debug_frame   0x000006b4       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_sin.o)
+ .debug_frame   0x000006d4       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_atan2.o)
+ .debug_frame   0x00000720       0x38 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-ef_rem_pio2.o)
+ .debug_frame   0x00000758       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_atan.o)
+ .debug_frame   0x0000079c       0x68 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-kf_rem_pio2.o)
+ .debug_frame   0x00000804       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_scalbn.o)
+ .debug_frame   0x00000824       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_floor.o)
+ .debug_frame   0x00000844       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x00000888       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000008bc       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+ .debug_frame   0x000008dc       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-errno.o)
+
+.debug_line_str
+                0x00000000       0x9e
+ .debug_line_str
+                0x00000000       0x9e /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+                                 0x92 (size before relaxing)
+ .debug_line_str
+                0x0000009e        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                                 0x96 (size before relaxing)
