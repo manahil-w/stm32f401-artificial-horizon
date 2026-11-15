@@ -17,25 +17,28 @@ void SVC_Handler(void)        __attribute__((weak, alias("Default_Handler")));
 void DebugMon_Handler(void)   __attribute__((weak, alias("Default_Handler")));
 void PendSV_Handler(void)     __attribute__((weak, alias("Default_Handler")));
 void SysTick_Handler(void)    __attribute__((weak, alias("Default_Handler")));
+void USART2_IRQHandler(void) __attribute__((weak, alias("Default_Handler")));
 
 __attribute__((section(".isr_vector"), used))
-void (* const vector_table[])(void) = {
-    (void (*)(void))&_estack,   //Initial Stack Pointer 
-    Reset_Handler,              // 1:  Reset                
-    NMI_Handler,                // 2:  NMI                   
-    HardFault_Handler,          // 3:  Hard Fault            
-    MemManage_Handler,          // 4:  MPU Fault             
-    BusFault_Handler,           // 5:  Bus Fault             
-    UsageFault_Handler,         // 6:  Usage Fault           
-    0,                          // 7:  Reserved             
-    0,                          // 8:  Reserved             
-    0,                          // 9:  Reserved             
-    0,                          // 10: Reserved             
-    SVC_Handler,                // 11: SVCall                
-    DebugMon_Handler,           // 12: Debug Monitor         
-    0,                          // 13: Reserved             
-    PendSV_Handler,             // 14: PendSV                
-    SysTick_Handler             // 15: SysTick               
+void (* const vector_table[55])(void) = {
+    [0] = (void (*)(void))&_estack,   //Initial Stack Pointer 
+    [1] = Reset_Handler,              // 1:  Reset                
+    [2] = NMI_Handler,                // 2:  NMI                   
+    [3] = HardFault_Handler,          // 3:  Hard Fault            
+    [4] = MemManage_Handler,          // 4:  MPU Fault             
+    [5] = BusFault_Handler,           // 5:  Bus Fault             
+    [6] = UsageFault_Handler,         // 6:  Usage Fault           
+    [7] = 0,                          // 7:  Reserved             
+    [8] = 0,                          // 8:  Reserved             
+    [9] = 0,                          // 9:  Reserved             
+    [10] = 0,                         // 10: Reserved             
+    [11] = SVC_Handler,               // 11: SVCall                
+    [12] = DebugMon_Handler,          // 12: Debug Monitor         
+    [13] = 0,                         // 13: Reserved             
+    [14] = PendSV_Handler,            // 14: PendSV                
+    [15] = SysTick_Handler,           // 15: SysTick   
+    [54]= USART2_IRQHandler,           // 54: USART2                
+               
 };
 
 void Reset_Handler(void)
