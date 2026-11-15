@@ -1,0 +1,229 @@
+
+Merging object attributes
+
+
+Discarded input sections
+
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .group         0x00000000        0xc build/startup/startup.o
+ .text          0x00000000        0x0 build/startup/startup.o
+ .data          0x00000000        0x0 build/startup/startup.o
+ .bss           0x00000000        0x0 build/startup/startup.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .group         0x00000000        0xc build/app/main.o
+ .text          0x00000000        0x0 build/app/main.o
+ .data          0x00000000        0x0 build/app/main.o
+ .bss           0x00000000        0x0 build/app/main.o
+ .debug_macro   0x00000000      0xaf0 build/app/main.o
+ .debug_macro   0x00000000       0x2e build/app/main.o
+ .debug_macro   0x00000000       0x28 build/app/main.o
+ .debug_macro   0x00000000      0x523 build/app/main.o
+ .debug_macro   0x00000000       0x1c build/app/main.o
+ .debug_macro   0x00000000       0x22 build/app/main.o
+ .debug_macro   0x00000000      0x107 build/app/main.o
+ .debug_macro   0x00000000     0x1057 build/app/main.o
+ .debug_macro   0x00000000      0x11f build/app/main.o
+ .debug_macro   0x00000000     0xb881 build/app/main.o
+ .debug_macro   0x00000000       0x6d build/app/main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00060000         xr
+RAM              0x20000000         0x00018000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD build/startup/startup.o
+LOAD build/app/main.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+                0x20018000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000200                        _Min_Heap_Size = 0x200
+                0x00000400                        _Min_Stack_Size = 0x400
+
+.isr_vector     0x08000000       0x40
+                0x08000000                        . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000       0x40 build/startup/startup.o
+                0x08000000                vector_table
+                0x08000040                        . = ALIGN (0x4)
+
+.text           0x08000040       0xcc
+                0x08000040                        . = ALIGN (0x4)
+ *(.text*)
+ .text.Default_Handler
+                0x08000040        0x2 build/startup/startup.o
+                0x08000040                DebugMon_Handler
+                0x08000040                HardFault_Handler
+                0x08000040                SysTick_Handler
+                0x08000040                PendSV_Handler
+                0x08000040                NMI_Handler
+                0x08000040                UsageFault_Handler
+                0x08000040                Default_Handler
+                0x08000040                MemManage_Handler
+                0x08000040                SVC_Handler
+                0x08000040                BusFault_Handler
+ *fill*         0x08000042        0x2 
+ .text.Reset_Handler
+                0x08000044       0x5c build/startup/startup.o
+                0x08000044                Reset_Handler
+ .text.main     0x080000a0       0x6c build/app/main.o
+                0x080000a0                main
+ *(.rodata*)
+                0x0800010c                        . = ALIGN (0x4)
+
+.glue_7         0x0800010c        0x0
+ .glue_7        0x0800010c        0x0 linker stubs
+
+.glue_7t        0x0800010c        0x0
+ .glue_7t       0x0800010c        0x0 linker stubs
+
+.vfp11_veneer   0x0800010c        0x0
+ .vfp11_veneer  0x0800010c        0x0 linker stubs
+
+.v4_bx          0x0800010c        0x0
+ .v4_bx         0x0800010c        0x0 linker stubs
+
+.iplt           0x0800010c        0x0
+ .iplt          0x0800010c        0x0 build/startup/startup.o
+
+.rel.dyn        0x0800010c        0x0
+ .rel.iplt      0x0800010c        0x0 build/startup/startup.o
+
+.data           0x20000000        0x0 load address 0x0800010c
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sdata = .
+ *(.data*)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _edata = .
+                0x0800010c                        _sidata = LOADADDR (.data)
+
+.igot.plt       0x20000000        0x0 load address 0x0800010c
+ .igot.plt      0x20000000        0x0 build/startup/startup.o
+
+.bss            0x20000000        0x0 load address 0x0800010c
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sbss = .
+ *(.bss*)
+ *(COMMON)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _ebss = .
+
+._user_heap_stack
+                0x20000000      0x600 load address 0x0800010c
+                0x20000000                        . = ALIGN (0x8)
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x20000200                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000000      0x200 
+                0x20000600                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000200      0x400 
+                0x20000600                        . = ALIGN (0x8)
+
+/DISCARD/
+ *(.ARM.exidx*)
+ *(.ARM.extab*)
+OUTPUT(build/firmware.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000      0x651
+ .debug_info    0x00000000      0x32b build/startup/startup.o
+ .debug_info    0x0000032b      0x326 build/app/main.o
+
+.debug_abbrev   0x00000000      0x266
+ .debug_abbrev  0x00000000      0x173 build/startup/startup.o
+ .debug_abbrev  0x00000173       0xf3 build/app/main.o
+
+.debug_loclists
+                0x00000000       0x85
+ .debug_loclists
+                0x00000000       0x5d build/startup/startup.o
+ .debug_loclists
+                0x0000005d       0x28 build/app/main.o
+
+.debug_aranges  0x00000000       0x48
+ .debug_aranges
+                0x00000000       0x28 build/startup/startup.o
+ .debug_aranges
+                0x00000028       0x20 build/app/main.o
+
+.debug_rnglists
+                0x00000000       0x50
+ .debug_rnglists
+                0x00000000       0x19 build/startup/startup.o
+ .debug_rnglists
+                0x00000019       0x37 build/app/main.o
+
+.debug_macro    0x00000000     0xdd30
+ .debug_macro   0x00000000       0x8f build/startup/startup.o
+ .debug_macro   0x0000008f      0xaf0 build/startup/startup.o
+ .debug_macro   0x00000b7f      0x523 build/startup/startup.o
+ .debug_macro   0x000010a2       0x2e build/startup/startup.o
+ .debug_macro   0x000010d0       0x28 build/startup/startup.o
+ .debug_macro   0x000010f8       0x1c build/startup/startup.o
+ .debug_macro   0x00001114       0x22 build/startup/startup.o
+ .debug_macro   0x00001136      0x107 build/startup/startup.o
+ .debug_macro   0x0000123d     0x1057 build/startup/startup.o
+ .debug_macro   0x00002294      0x11f build/startup/startup.o
+ .debug_macro   0x000023b3     0xb881 build/startup/startup.o
+ .debug_macro   0x0000dc34       0x6d build/startup/startup.o
+ .debug_macro   0x0000dca1       0x8f build/app/main.o
+
+.debug_line     0x00000000      0x3c9
+ .debug_line    0x00000000      0x1df build/startup/startup.o
+ .debug_line    0x000001df      0x1ea build/app/main.o
+
+.debug_str      0x00000000    0x4fa5b
+ .debug_str     0x00000000    0x4fa5b build/startup/startup.o
+                              0x4fcff (size before relaxing)
+ .debug_str     0x0004fa5b        0x0 build/app/main.o
+                              0x4fd71 (size before relaxing)
+
+.comment        0x00000000       0x1e
+ .comment       0x00000000       0x1e build/startup/startup.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000001e        0x0 build/app/main.o
+                                 0x1f (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x34
+ .ARM.attributes
+                0x00000000       0x34 build/startup/startup.o
+ .ARM.attributes
+                0x00000034       0x34 build/app/main.o
+
+.debug_frame    0x00000000       0x5c
+ .debug_frame   0x00000000       0x38 build/startup/startup.o
+ .debug_frame   0x00000038       0x24 build/app/main.o
