@@ -6,7 +6,7 @@ The system measures pitch and roll, processes the sensor data using a complement
 
 ## Demo
 
-![Artificial Horizon running on SSD1306 OLED](docs/images/artificial-horizon.jpg)
+![Artificial Horizon running on SSD1306 OLED](/images/artificial-horizon.jpg)
 
 *Live artificial horizon displayed on a 0.96-inch, 128×64 OLED.*
 
