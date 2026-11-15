@@ -159,7 +159,7 @@ END GROUP
                 0x08000000                vector_table
                 0x080000dc                        . = ALIGN (0x4)
 
-.text           0x080000dc      0x248
+.text           0x080000dc      0x30c
                 0x080000dc                        . = ALIGN (0x4)
  *(.text*)
  .text.Default_Handler
@@ -172,7 +172,6 @@ END GROUP
                 0x080000dc                Default_Handler
                 0x080000dc                MemManage_Handler
                 0x080000dc                SVC_Handler
-                0x080000dc                USART2_IRQHandler
                 0x080000dc                BusFault_Handler
  *fill*         0x080000de        0x2 
  .text.Reset_Handler
@@ -194,70 +193,75 @@ END GROUP
                 0x08000234                delay_ms
  *fill*         0x0800024a        0x2 
  .text.uart_init
-                0x0800024c       0x48 build/drivers/uart.o
+                0x0800024c       0x5c build/drivers/uart.o
                 0x0800024c                uart_init
  .text.uart_putc
-                0x08000294       0x14 build/drivers/uart.o
-                0x08000294                uart_putc
+                0x080002a8       0x44 build/drivers/uart.o
+                0x080002a8                uart_putc
  .text.uart_write
-                0x080002a8       0x14 build/drivers/uart.o
-                0x080002a8                uart_write
- .text.main     0x080002bc       0x60 build/app/main.o
-                0x080002bc                main
+                0x080002ec       0x14 build/drivers/uart.o
+                0x080002ec                uart_write
+ .text.USART2_IRQHandler
+                0x08000300       0x6c build/drivers/uart.o
+                0x08000300                USART2_IRQHandler
+ .text.main     0x0800036c       0x68 build/app/main.o
+                0x0800036c                main
  *(.rodata*)
  .rodata.main.str1.4
-                0x0800031c        0x8 build/app/main.o
-                0x08000324                        . = ALIGN (0x4)
+                0x080003d4       0x14 build/app/main.o
+                0x080003e8                        . = ALIGN (0x4)
 
-.glue_7         0x08000324        0x0
- .glue_7        0x08000324        0x0 linker stubs
+.glue_7         0x080003e8        0x0
+ .glue_7        0x080003e8        0x0 linker stubs
 
-.glue_7t        0x08000324        0x0
- .glue_7t       0x08000324        0x0 linker stubs
+.glue_7t        0x080003e8        0x0
+ .glue_7t       0x080003e8        0x0 linker stubs
 
-.vfp11_veneer   0x08000324        0x0
- .vfp11_veneer  0x08000324        0x0 linker stubs
+.vfp11_veneer   0x080003e8        0x0
+ .vfp11_veneer  0x080003e8        0x0 linker stubs
 
-.v4_bx          0x08000324        0x0
- .v4_bx         0x08000324        0x0 linker stubs
+.v4_bx          0x080003e8        0x0
+ .v4_bx         0x080003e8        0x0 linker stubs
 
-.iplt           0x08000324        0x0
- .iplt          0x08000324        0x0 build/startup/startup.o
+.iplt           0x080003e8        0x0
+ .iplt          0x080003e8        0x0 build/startup/startup.o
 
-.rel.dyn        0x08000324        0x0
- .rel.iplt      0x08000324        0x0 build/startup/startup.o
+.rel.dyn        0x080003e8        0x0
+ .rel.iplt      0x080003e8        0x0 build/startup/startup.o
 
-.data           0x20000000        0x0 load address 0x08000324
+.data           0x20000000        0x0 load address 0x080003e8
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data*)
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _edata = .
-                0x08000324                        _sidata = LOADADDR (.data)
+                0x080003e8                        _sidata = LOADADDR (.data)
 
-.igot.plt       0x20000000        0x0 load address 0x08000324
+.igot.plt       0x20000000        0x0 load address 0x080003e8
  .igot.plt      0x20000000        0x0 build/startup/startup.o
 
-.bss            0x20000000        0x4 load address 0x08000324
+.bss            0x20000000       0x88 load address 0x080003e8
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sbss = .
  *(.bss*)
  .bss.ms_ticks  0x20000000        0x4 build/drivers/systick.o
+ .bss.tx_tail   0x20000004        0x2 build/drivers/uart.o
+ .bss.tx_head   0x20000006        0x2 build/drivers/uart.o
+ .bss.tx_buf    0x20000008       0x80 build/drivers/uart.o
  *(COMMON)
-                0x20000004                        . = ALIGN (0x4)
-                0x20000004                        _ebss = .
+                0x20000088                        . = ALIGN (0x4)
+                0x20000088                        _ebss = .
 
 ._user_heap_stack
-                0x20000004      0x604 load address 0x08000324
-                0x20000008                        . = ALIGN (0x8)
- *fill*         0x20000004        0x4 
+                0x20000088      0x600 load address 0x080003e8
+                0x20000088                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
-                0x20000208                        . = (. + _Min_Heap_Size)
- *fill*         0x20000008      0x200 
-                0x20000608                        . = (. + _Min_Stack_Size)
- *fill*         0x20000208      0x400 
-                0x20000608                        . = ALIGN (0x8)
+                0x20000288                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000088      0x200 
+                0x20000688                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000288      0x400 
+                0x20000688                        . = ALIGN (0x8)
 
 /DISCARD/
  *(.ARM.exidx*)
@@ -265,22 +269,22 @@ END GROUP
 OUTPUT(build/firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000      0xee1
+.debug_info     0x00000000     0x1332
  .debug_info    0x00000000      0x32b build/startup/startup.o
  .debug_info    0x0000032b      0x2f2 build/drivers/clock.o
  .debug_info    0x0000061d      0x181 build/drivers/systick.o
- .debug_info    0x0000079e      0x3ae build/drivers/uart.o
- .debug_info    0x00000b4c      0x395 build/app/main.o
+ .debug_info    0x0000079e      0x9d1 build/drivers/uart.o
+ .debug_info    0x0000116f      0x1c3 build/app/main.o
 
-.debug_abbrev   0x00000000      0x617
+.debug_abbrev   0x00000000      0x6fb
  .debug_abbrev  0x00000000      0x173 build/startup/startup.o
  .debug_abbrev  0x00000173      0x106 build/drivers/clock.o
  .debug_abbrev  0x00000279      0x14c build/drivers/systick.o
- .debug_abbrev  0x000003c5      0x106 build/drivers/uart.o
- .debug_abbrev  0x000004cb      0x14c build/app/main.o
+ .debug_abbrev  0x000003c5      0x21d build/drivers/uart.o
+ .debug_abbrev  0x000005e2      0x119 build/app/main.o
 
 .debug_loclists
-                0x00000000      0x15e
+                0x00000000      0x1a6
  .debug_loclists
                 0x00000000       0x5d build/startup/startup.o
  .debug_loclists
@@ -288,11 +292,11 @@ LOAD linker stubs
  .debug_loclists
                 0x000000e8       0x34 build/drivers/systick.o
  .debug_loclists
-                0x0000011c       0x2b build/drivers/uart.o
+                0x0000011c       0x5e build/drivers/uart.o
  .debug_loclists
-                0x00000147       0x17 build/app/main.o
+                0x0000017a       0x2c build/app/main.o
 
-.debug_aranges  0x00000000       0xd0
+.debug_aranges  0x00000000       0xd8
  .debug_aranges
                 0x00000000       0x28 build/startup/startup.o
  .debug_aranges
@@ -300,12 +304,12 @@ LOAD linker stubs
  .debug_aranges
                 0x00000048       0x38 build/drivers/systick.o
  .debug_aranges
-                0x00000080       0x30 build/drivers/uart.o
+                0x00000080       0x38 build/drivers/uart.o
  .debug_aranges
-                0x000000b0       0x20 build/app/main.o
+                0x000000b8       0x20 build/app/main.o
 
 .debug_rnglists
-                0x00000000       0x84
+                0x00000000       0x96
  .debug_rnglists
                 0x00000000       0x19 build/startup/startup.o
  .debug_rnglists
@@ -313,11 +317,11 @@ LOAD linker stubs
  .debug_rnglists
                 0x0000002d       0x25 build/drivers/systick.o
  .debug_rnglists
-                0x00000052       0x1f build/drivers/uart.o
+                0x00000052       0x25 build/drivers/uart.o
  .debug_rnglists
-                0x00000071       0x13 build/app/main.o
+                0x00000077       0x1f build/app/main.o
 
-.debug_macro    0x00000000     0xdf5e
+.debug_macro    0x00000000     0xdf64
  .debug_macro   0x00000000       0x8f build/startup/startup.o
  .debug_macro   0x0000008f      0xaf0 build/startup/startup.o
  .debug_macro   0x00000b7f      0x523 build/startup/startup.o
@@ -332,28 +336,28 @@ LOAD linker stubs
  .debug_macro   0x0000dc34       0x6d build/startup/startup.o
  .debug_macro   0x0000dca1       0xc3 build/drivers/clock.o
  .debug_macro   0x0000dd64       0x99 build/drivers/systick.o
- .debug_macro   0x0000ddfd       0xa5 build/drivers/uart.o
- .debug_macro   0x0000dea2       0xac build/app/main.o
- .debug_macro   0x0000df4e       0x10 build/app/main.o
+ .debug_macro   0x0000ddfd       0xab build/drivers/uart.o
+ .debug_macro   0x0000dea8       0xac build/app/main.o
+ .debug_macro   0x0000df54       0x10 build/app/main.o
 
-.debug_line     0x00000000      0xa42
+.debug_line     0x00000000      0xb21
  .debug_line    0x00000000      0x1df build/startup/startup.o
  .debug_line    0x000001df      0x272 build/drivers/clock.o
  .debug_line    0x00000451      0x201 build/drivers/systick.o
- .debug_line    0x00000652      0x216 build/drivers/uart.o
- .debug_line    0x00000868      0x1da build/app/main.o
+ .debug_line    0x00000652      0x2f2 build/drivers/uart.o
+ .debug_line    0x00000944      0x1dd build/app/main.o
 
-.debug_str      0x00000000    0x4fc19
- .debug_str     0x00000000    0x4fc19 build/startup/startup.o
+.debug_str      0x00000000    0x50038
+ .debug_str     0x00000000    0x50038 build/startup/startup.o
                               0x4fcff (size before relaxing)
- .debug_str     0x0004fc19        0x0 build/drivers/clock.o
+ .debug_str     0x00050038        0x0 build/drivers/clock.o
                               0x4fe06 (size before relaxing)
- .debug_str     0x0004fc19        0x0 build/drivers/systick.o
+ .debug_str     0x00050038        0x0 build/drivers/systick.o
                               0x4fca1 (size before relaxing)
- .debug_str     0x0004fc19        0x0 build/drivers/uart.o
-                              0x4fdd8 (size before relaxing)
- .debug_str     0x0004fc19        0x0 build/app/main.o
-                              0x4fde2 (size before relaxing)
+ .debug_str     0x00050038        0x0 build/drivers/uart.o
+                              0x5027f (size before relaxing)
+ .debug_str     0x00050038        0x0 build/app/main.o
+                              0x4fca7 (size before relaxing)
 
 .comment        0x00000000       0x1e
  .comment       0x00000000       0x1e build/startup/startup.o
@@ -380,9 +384,9 @@ LOAD linker stubs
  .ARM.attributes
                 0x000000d0       0x34 build/app/main.o
 
-.debug_frame    0x00000000      0x124
+.debug_frame    0x00000000      0x138
  .debug_frame   0x00000000       0x38 build/startup/startup.o
  .debug_frame   0x00000038       0x20 build/drivers/clock.o
  .debug_frame   0x00000058       0x5c build/drivers/systick.o
- .debug_frame   0x000000b4       0x48 build/drivers/uart.o
- .debug_frame   0x000000fc       0x28 build/app/main.o
+ .debug_frame   0x000000b4       0x58 build/drivers/uart.o
+ .debug_frame   0x0000010c       0x2c build/app/main.o
